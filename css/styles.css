@@ -2,10 +2,9 @@
 :root {
   --brand-color: #2e2f42;
   --brand-background-color: #ffffff;
-  --transition-duration-and-func: 250ms linear;
   --transition-duration: 250ms;
-  --transition-function: linear;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 
 }
 
@@ -115,14 +114,13 @@ header {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
-  transition: color var(--transition-duration-and-func, --animation-timing-function);
+  transition: color var(--transition-duration) var(--animation-timing-function);
 }
 
 
 .menu-link:hover,
 .menu-link:focus {
   color: #4d5ae5;
-  text-decoration: underline;
   
 }
 
@@ -147,14 +145,13 @@ header {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none; 
-  transition: color var(--transition-duration-and-func, --animation-timing-function);
+  transition: color var(--transition-duration) var(--animation-timing-function);
 }
 
 
 .tel-mail:hover,
 .tel-mail:focus {
   color: #4d5ae5;
-  text-decoration: underline;
 }
 
 .mail-tel {
@@ -215,16 +212,14 @@ header {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
-  transition: color var(--transition-duration-and-func, --animation-timing-function),
-  background-color var(--transition-duration-and-func, --animation-timing-function),
-  box-shadow var(--transition-duration-and-func, --animation-timing-function);
+  transition: background-color var(--transition-duration) var(--animation-timing-function),
+  box-shadow var(--transition-duration) var(--animation-timing-function);
   
 }
 
   
 .button-order:hover,
 .button-order:focus {
-  color: #ffffff;
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -384,7 +379,7 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: #4D5AE5;
-transition: background-color var(--transition-duration-and-func, --animation-timing-function);
+transition: background-color var(--transition-duration) var(--animation-timing-function);
 
 }
 
@@ -430,8 +425,8 @@ border-radius: 4px;
 width: 168px;
 height: 88px;
 fill: #8E8F99;
-transition: border-color var(--transition-duration-and-func, --animation-timing-function), 
-fill var(--transition-duration-and-func, --animation-timing-function);
+transition: border-color var(--transition-duration) var(--animation-timing-function), 
+fill var(--transition-duration) var(--animation-timing-function);
 }
 
 .customers-list-link:hover,
@@ -484,9 +479,9 @@ fill var(--transition-duration-and-func, --animation-timing-function);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
   padding: 12px 24px;
-  transition: color var(--transition-duration-and-func, --animation-timing-function),
-   background-color var(--transition-duration-and-func, --animation-timing-function),
-   box-shadow var(--transition-duration-and-func, --animation-timing-function);
+  transition: color var(--transition-duration) var(--animation-timing-function),
+   background-color var(--transition-duration) var(--animation-timing-function),
+   box-shadow var(--transition-duration) var(--animation-timing-function);
 }
 
 
@@ -621,7 +616,7 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
-transition: background-color var(--transition-duration-and-func, --animation-timing-function);
+transition: background-color var(--transition-duration) var(--animation-timing-function);
 }
 
 .media-list-link:hover,
@@ -658,8 +653,8 @@ flex-grow: 1;
   height: 100%;
   z-index: 100;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transition-duration-and-func, --animation-timing-function),
-  visibility var(--transition-duration-and-func, --animation-timing-function);
+  transition: opacity var(--transition-duration) var(--animation-timing-function),
+  visibility var(--transition-duration) var(--animation-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -691,7 +686,8 @@ flex-grow: 1;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: background-color var(--transition-duration-and-func, --animation-timing-function);
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--animation-timing-function);
 }
 
 .modal-close-btn:hover,
@@ -706,6 +702,6 @@ flex-grow: 1;
 }
 
 .cross-close-button-icon {
-  transition: fill var(--transition-duration-and-func, --animation-timing-function);
+  transition: fill var(--transition-duration) var(--animation-timing-function);
 
 }
